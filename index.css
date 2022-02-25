@@ -1,0 +1,111 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family:calibri;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style:none;
+}
+
+.parent{
+    display:flex;
+}
+.parent nav{
+    background-color:#2c3e50;
+    height:100vh;
+}
+.parent nav{
+    width:350px;
+}
+.parent nav ul li{
+    padding:30px;
+}
+.parent nav ul li:hover{
+    background-color:#506074;
+}
+.parent nav ul li i{
+    color:#fff;
+    margin-left:10px;
+}
+.parent nav ul li a{
+    color:#fff;
+}
+.content{
+    position: relative;
+    width:100%;
+    z-index:-1;
+}
+.web{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+.content .web h3{
+    margin-bottom:10px;
+}
+.content .web p{
+    width:376px;
+}
+.content .web img{
+    width:300px;
+    margin-bottom:10px;
+}
+.active{
+    display:none;
+}
+.front,.back,.fullstack,.ux,.project,.javascript,.database{
+    padding:30px;
+}
+.front p,.front .tx,.back p,.back tx,.fullstack p,.fullstack .tx,.ux p,.ux p,.ux .tx,.project p,.project .tx,.javascript p,.javascript .tx,.database p,.database .tx{
+  margin-bottom:10px;
+}
+.front .name,.back .name,.fullstack .name,.ux .name,.project .name,.javascript .name,.database .name{
+    display:flex;
+    align-items: center;
+    gap:10px;
+    margin-bottom:10px;
+    animation:right .4s;
+}
+.front .article,.back .article,.fullstack .article,.ux .article,.project .article,.javascript .article,.database .article{
+    animation:right .6s;
+}
+.front .boxs,.back .boxs,.fullstack .boxs,.ux .boxs,.project .boxs,.javascript .boxs,.database .boxs{
+    animation:right .8s;
+}
+.front .pr,.back .pr,.fullstack .pr,.ux .pr,.project .pr,.javascript .pr,.database .pr{
+    animation:right .9s;
+}
+@keyframes right{
+    0%{
+        transform:translateX(-100%);
+    }
+    100%{
+        transform:translateX(100);
+    }
+}
+.front .name .cirlce,.back .name .cirlce,.fullstack .name .cirlce,.ux .name .cirlce,.project .name .cirlce,
+.javascript .name .cirlce,.database .name .cirlce {
+    width:80px;
+    height:80px;
+    display:block;
+    border-radius:50%;
+    background-color:black;
+}
+.boxs{
+    display:flex;
+    gap:10px;
+    margin-bottom:10px;
+}
+.boxs .box{
+    width:100px;
+    height:100px;
+    background-color:black;
+    border-radius:4px;
+}
